@@ -28,18 +28,19 @@ const addToUsersBox = function (userName) {
     //to true, while also casting from an object to boolean
     if (!!document.querySelector(`.${userName}-userlist`)) {
         return;
-    
     }
     
+    hex = Math.floor(Math.random() * 1000);
     //setup the divs for displaying the connected users
     //id is set to a string including the username
     const userBox = `
     <div class="chat_id ${userName}-userlist">
-      <h5>${userName}</h5>
+      <h5 style="color: #${hex}">${userName}</h5>
     </div>
   `;
     //set the inboxPeople div with the value of userbox
     inboxPeople.innerHTML += userBox;
+    alert(userName+" has joined chat");
 };
 
 //call 
@@ -54,9 +55,12 @@ socket.on("new user", function (data) {
 
 //when a user leaves
 socket.on("user disconnected", function (userName) {
+  alert(userName+" has disconnected");
   document.querySelector(`.${userName}-userlist`).remove();
 });
 
+
+/* ----------------------------------------------------------- */
 
 const inputField = document.querySelector(".message_form__input");
 const messageForm = document.querySelector(".message_form");
@@ -69,9 +73,10 @@ const addNewMessage = ({ user, message }) => {
   const receivedMsg = `
   <div class="incoming__message">
     <div class="received__message">
+      <hr>
       <p>${message}</p>
       <div class="message__info">
-        <span class="message__author">${user}</span>
+        <span class="message__author" style="color: #${hex};">${user}</span>
         <span class="time_date">${formattedTime}</span>
       </div>
     </div>
@@ -80,6 +85,7 @@ const addNewMessage = ({ user, message }) => {
   const myMsg = `
   <div class="outgoing__message">
     <div class="sent__message">
+      <hr>
       <p>${message}</p>
       <div class="message__info">
         <span class="time_date">${formattedTime}</span>
