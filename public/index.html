@@ -1,21 +1,66 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home page</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Home page</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <scriptsrc="https: //ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <scriptsrc="https: //cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+      </script>
+      <scriptsrc="https: //maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/demo.css">
-    </head>
-    <body>
-        <p>This is the home page</p>
+        <style>
+          h1 {
+            padding-top: 20px;
+          }
 
-        <p><a href = "chat.html">Chat</a></p>
-        
-        <script src="js/client.js" async defer></script>
-     
+          img {
+            width: 500px;
+            height: 500px;
+            float: right;
+          }
+        </style>
+</head>
 
-    </body>
+<body>
+  <ul>
+    <li class="title"><a href="index.html">Instant Chat</a></li>
+    <li class="main"><a href="chat.html">Chat</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <div class="jumbotron row">
+    <div class="container col">
+      <h1>Instant chat messanger</h1>
+      <p>Talk to random people from anywhere at anytime anonymously.</p>
+      <a href="chat.html" class="btn">Join in!</a>
+    </div>
+    <img src="index-graphic.png" class="col">
+  </div>
+  <div class="endnav">
+    <div class="row container justify-content-centre">
+      <div class="feature col">
+        <h4 class="text-body-emphasis">Instant Chat</h4>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="chat.html">Chat</a></p>
+        <p><a href="about.html">About</a></p>
+      </div>
+      <div class="feature col">
+        <h4 class="text-body-emphasis">Available on</h4>
+        <p>iOS</p>
+        <p>Android</p>
+      </div>
+    </div>
+  </div>
+  <script src="js/client.js" async defer></script>
+</body>
+
 </html>
