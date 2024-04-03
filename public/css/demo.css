@@ -13,9 +13,9 @@
     width: 200px;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 48px;
     left: 0;
-    background-color: #111;
+    background-color: #272626;
     overflow-x: hidden;
   }
 
@@ -45,6 +45,40 @@
   
   /* Style the content */
   .content {
+    display: block;
     margin-left: 200px;
     padding-left: 20px;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
   }
+
+  /* navbar styling */
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #1f2232;
+    margin: 0;
+    padding: 15px;  
+  }
+
+  li {
+    display: inline;
+    float: left;
+  }
+
+  li a{
+    padding: 15px;
+    color: #BC9EC1;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #1a1d23;
+  }
+
+
+.message_form__input {
+  height: 30px;
+}
