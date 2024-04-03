@@ -1,84 +1,173 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Style the side navigation */
-  .sidenav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 48px;
-    left: 0;
-    background-color: #272626;
-    overflow-x: hidden;
-  }
+  box-sizing: border-box;
+}
 
-  /*make the active user text inherit style from container*/
+/* CSS HEX */
+--cadet-gray: #9DA3A4ff;
+--wenge: #604D53ff;
+--puce: #DB7F8Eff;
+--tea-rose-red: #DFBBBAff;
+--cerise: #D2536Aff;
 
-  .inbox__people{
-      color: white;
-      padding: 16px;
-  }
-  
-  
-  /* Side navigation links */
-  .sidenav a {
-    color: white;
-    padding: 16px;
-    text-decoration: none;
-    display: block;
-  }
+.abril-fatface-regular {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #EFEFEF;
+}
 
-  
-  /* Change color on hover */
-  .sidenav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Style the content */
-  .content {
-    display: block;
-    margin-left: 200px;
-    padding-left: 20px;
-    position: fixed;
-    bottom: 20px;
-    left: 0;
-    width: 100%;
-  }
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 62px;
+  left: 0;
+  background-color: #111111;
+  overflow-x: hidden;
+}
 
-  /* navbar styling */
-  ul {
-    list-style-type: none;
-    overflow: hidden;
-    background-color: #1f2232;
-    margin: 0;
-    padding: 15px;  
-  }
+/*make the active user text inherit style from container*/
+.inbox__people {
+  color: white;
+  padding: 16px;
+}
 
-  li {
-    display: inline;
-    float: left;
-  }
-
-  li a{
-    padding: 15px;
-    color: #BC9EC1;
-    text-decoration: none;
-  }
-
-  li a:hover {
-    background-color: #1a1d23;
-  }
-
-
+/*make the input box bigger*/
 .message_form__input {
-  height: 30px;
+  height: 40px;
+  width: 400px;
+}
+
+/* Side navigation links */
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  display: block;
+  margin-left: 200px;
+  padding-left: 20px;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+}
+
+/* navbar styling */
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #ffff;
+  margin: 0;
+  padding: 15px;
+  font-size: medium;
+  width: 100%;
+}
+
+li {
+  display: inline;
+  float: right;
+  margin-top: 5px;
+}
+
+a {
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #DB7F8E;
+}
+
+.title a {
+  color: #604D53;
+}
+
+.title {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-size: larger;
+  font-style: normal;
+  float: left;
+}
+
+.main a {
+  color: #D2536A;
+}
+
+.main {
+  display: block;
+  border: 2px solid #D2536A;
+  padding: 2px;
+}
+
+.main:hover {
+  background-color: #D2536A;
+}
+
+.main a:hover {
+  color: #ffff;
+}
+
+.btn {
+  background-color: #DB7F8E;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #D2536A;
+}
+
+.endnav {
+  width: 100%;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 20px;
+}
+
+.endnav h4 {
+  color: #604D53;
+  font-weight: bold;
+}
+
+.container {
+  padding-top: 150px;
+}
+
+.FAQ {
+  margin: 40px 0;
+  padding: 20px 50px;
+  background-color: #ffffff;
+}
+
+.FAQ h3 {
+  padding-top: 20px;
+  border-top: solid #DB7F8E;
+  color: #604D53;
+  font-family: "Adamina", serif;
+}
+
+.adamina-regular {
+  font-family: "Adamina", serif;
+  font-weight: 400;
+  font-style: normal;
 }
